@@ -15,7 +15,10 @@ function coupon(){
     if(couponName==="SELL200"){
         discount();
         document.getElementById('coupon').value='';
-    }else{
+    }else if(couponName===""){
+        alert('Please Enter Coupon Code');
+    }
+    else{
         alert('Wrong Coupon Code');
     }
 }

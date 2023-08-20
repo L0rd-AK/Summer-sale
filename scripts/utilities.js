@@ -11,7 +11,7 @@ function discount(){
 
 function coupon(){
     const couponName=document.getElementById('coupon').value;
-    console.log(couponName);
+    
     if(couponName==="SELL200"){
         discount();
         document.getElementById('coupon').value='';
@@ -38,9 +38,9 @@ function On_Click(Name,Price){
 
 function addEntry(Name,Price){
     const name=document.getElementById(Name).innerText;
-    console.log(name);
     const p=document.createElement('p');
     p.innerHTML=`${index++}. ${name} -- ${Price.toFixed(2)}TK`;
+    p.classList.add("px-5");
     const entry=document.getElementById('Entry');
     entry.appendChild(p);
 }

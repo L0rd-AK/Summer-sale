@@ -41,6 +41,7 @@ function addEntry(Name,Price){
     const p=document.createElement('p');
     p.innerHTML=`${index++}. ${name} -- ${Price.toFixed(2)}TK`;
     p.classList.add("px-5");
+    p.classList.add("py-1");
     const entry=document.getElementById('Entry');
     entry.appendChild(p);
 }
